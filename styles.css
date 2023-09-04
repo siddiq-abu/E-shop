@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
 }
 
 /* 
@@ -14,7 +15,10 @@ NAV START
 
 */
 
-#nav {}
+#nav {
+
+ 
+}
 
 .fig-nav_img {
     /* background-image: url(./assets/Payday-img.gif); */
@@ -41,37 +45,59 @@ NAV START
 }
 
 .small-nav_text {
-    margin-left: 5rem;
+    margin: 2rem 0 0 5rem;
     color: teal;
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 .nav-logo {
     width: 10%;
     height: 3rem;
+
+}
+
+.nav-area_row {
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+   
 }
 
 .nav-area {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 1rem 0 1rem 0;
+    height: 3rem;
+   
 }
 
 .input-sec {
-    width: 50%;
+    width: 52%;
     height: 3rem;
     border: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding: 0;
+    margin-left: 2rem;
 }
 
 .child-sec {
     width: 100%;
     border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .search-input {
@@ -94,6 +120,7 @@ NAV START
     color: white;
     font-weight: bold;
     box-shadow: 5px 4px 20px rgb(214, 202, 202);
+    cursor: pointer;
 }
 
 .nav-cart {
@@ -101,13 +128,18 @@ NAV START
     gap: 1rem;
 }
 
-h3{
+h3 {
     display: flex;
     align-items: center;
     gap: .5rem;
+    cursor: pointer;
 }
 
-.icons{
+h3:hover {
+    color: orange;
+}
+
+.icons {
     font-size: 1.5rem;
 }
 
@@ -124,28 +156,55 @@ HEADER START
 
 */
 
-.header-row{
+.header-row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header-container{
-display: flex;
-gap: 2rem;
+.header-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.header-card_one{
+.header-card_one {
     width: 20%;
     height: 25rem;
-    border: 2px solid lightblue;
+    border: none;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 5px 4px 20px rgb(214, 202, 202);
 }
-.header-card_two{
+
+.card-one_items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.card-one_items:hover {
+    color: orange;
+}
+
+.header-card_two {
     width: 60%;
     height: 25rem;
-    border: 2px solid lightblue;
+    border: none;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 5px 4px 20px rgb(214, 202, 202);
 }
-.header-card_three{
+
+.header-card_three {
     width: 20%;
     height: 25rem;
     /* border: 2px solid lightblue; */
@@ -154,17 +213,80 @@ gap: 2rem;
     gap: 1rem;
 }
 
-.child-card{
+.child-card_one {
     width: 100%;
     height: 12rem;
-    border: 2px solid lightblue;
+    border: none;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 5px 4px 20px rgb(214, 202, 202);
 }
 
-.child-card{
+.order-icon_img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.call-to_order {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    gap: .5rem;
+    margin : 1rem;
+    /* padding: 1rem; */
+}
+
+.call-para {
+    margin: 0;
+    /* font-weight: bold; */
+    font-size: .8rem;
+}
+
+.call-line{
+    margin: 0;
+}
+
+.child-card_two {
     width: 100%;
     height: 12rem;
-    border: 2px solid lightblue;
+    border: none;
+    background-color: white;
+    /* background-image: url(./assets/PDS_SBB.png); */
+    border-radius: .5rem;
+    box-shadow: 5px 4px 20px rgb(214, 202, 202);
+}
+
+.pds-img{
+   width: 100%;
+   border-radius: .5rem;
 }
 
 
 
+/* 
+
+HEADER END
+
+*/
+
+/* 
+
+CATEGORIES START 
+
+*/
+
+.categories-row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories-container{
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 5px 4px 20px rgb(214, 202, 202);
+}
