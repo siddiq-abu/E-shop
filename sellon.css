@@ -1,0 +1,58 @@
+.small-nav_text{
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
+ color: #989898;
+}
+
+.nav-search-btn-call-to-order{
+    border-left: none;
+    margin-left: 0;
+    padding: 0 1.8rem ;
+    height: 2.5rem;
+    background-color: #ff9900;
+    border: none;  
+    color: white;
+    font-weight: bold;
+}
+
+.nav-area-call-to-order{
+ display: flex;
+ gap: .6rem; 
+ justify-content: center;
+}
+
+.nav-cart-call-to-order{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 12px;
+}
+
+
+/* ///////////// sell banner ///////////////// */
+.sellMain-header{
+    /* padding: 0 5rem; */
+}
+
+.head-banner-container{
+    background-image: url(./assets/sell\ on\ jumia\ banner.jpg);
+      color: #fff;
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.444),rgba(0,0,0,.544),rgba(0,0,0,.644)), url(/imgs/logo/banner.jpg);
+    height: calc(100vh - (5rem + 4rem));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%,top;
+    background-attachment: fixed;
+    margin-bottom: 8rem;
+    padding: 0 rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sell-banner{
+    width:90% ;
+    object-fit: fill;
+}
